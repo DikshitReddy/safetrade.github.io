@@ -1,0 +1,54 @@
+{% extends 'front/master.html' %}
+{% load static %}
+
+{% block headblock %}
+
+        <title>SafeTrade | Monitoring</title>
+        <meta charset="utf-8">
+
+{% endblock %}
+
+{% block mainblock %}
+
+    <div class="site-section cta-big-image" id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">User Monitoring</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="{% static 'front/images/about.jpg' %}" alt="Image" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3 class="h3 mb-4 text-black">For the next genration investment</h3>
+              <p style="text-align:justify;">
+                    Whether you are a long term investor or a margin trader these speculations will help to form your investment strategy.
+                    Our team will provide you effective help for selecting the most profitable stocks in the market.We will also help you by determining the price level at which you should buy and sell those stocks to get maximum return.
+                    Using the annual reports, we’ll also compare the company’s performance with its past to check its growth. We’ll also analyze the company’s future plans and strategy in the annual result in order to evaluate its performance.
+              </p>
+
+            </div>
+
+
+
+            <div class="mb-4">
+              <ul class="list-unstyled ul-check success">
+                <li>Our consultants will also help to analyze different reports like the annual reports and quarterly reports of the companies so that you get a comprehensive insight of the companies that you are looking for investment.</li>
+                <li>Our team will provide you with profitable stock trading tips that will help you to get maximum profit from your stock market investment.</li>
+              </ul>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

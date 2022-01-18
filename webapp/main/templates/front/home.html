@@ -1,0 +1,263 @@
+{% extends 'front/master.html' %}
+{% load static %}
+
+    {% block headblock %}
+
+        <title>SafeTrade | Home</title>
+        <meta charset="utf-8">
+
+    {% endblock %}
+
+    {% block mainblock %}
+         <div class="site-blocks-cover overlay" style="background-image: url({% static 'front/images/stock9.jpg' %});" data-aos="fade" id="home-section">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+
+          <div class="col-md-8 mt-lg-5 text-center">
+            <h1 class="text-uppercase" data-aos="fade-up">Welcome</h1>
+            <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100"><b>Wanna start trading? Have no knowledge of trading? No problem, you are at rigth place</b></p>
+            <div data-aos="fade-up" data-aos-delay="100">
+              <a href="#contact-section" class="btn smoothscroll btn-primary mr-2 mb-2">Get In Touch</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <a href="#about-section" class="mouse smoothscroll">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
+    </div>
+    <div class="site-section cta-big-image" id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">About Us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="{% static 'front/images/aboutus.jpg' %}" alt="Image" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3 class="h3 mb-4 text-black">For the next genration investment</h3>
+              <p>SafeTrade is founded by students of Saveetha Engineering College to make predcitions in their favourite stocks and invest safely.</p>
+              
+            </div>
+            
+            
+              
+            <div class="mb-4">
+              <ul class="list-unstyled ul-check success">
+                <li>We will teach you abour stock</li>
+                <li>We will make you stock market expert</li>
+                <li>We provide you various other services</li>
+              </ul>
+              
+            </div>
+
+            
+            
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <section class="site-section border-bottom bg-light" id="services-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">Our Services</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-startup"></span></div>
+              <div>
+                <h3>Business Consulting</h3>
+                <p>Get professional or expert advice in a particular area such as security, management, accountancy, law, human resources, marketing, finance, engineering, science or any of many other specialized fields.</p>
+                <p><a href="/consult">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-idea"></span></div>
+              <div>
+                <h3>Stock Price Predictions</h3>
+                <p>Get Predictions using Artificial Intelligence with high accuracy, get correct investment and divestment time and maximize your profit.</p>
+                <p><a href="/stock">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-graphic-design"></span></div>
+              <div>
+                <h3>Market Analysis</h3>
+                <p>Become a part of the industry analysis and thus in turn of the global environmental analysis. Through all of these analyses, identify your firm strengths, weaknesses, opportunities and threats.</p>
+                <p><a href="/market">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-settings"></span></div>
+              <div>
+                <h3>User Monitoring</h3>
+                <p>Real user monitoring is a passive monitoring technology that records all user interaction with a website or client interacting with a server or cloud-based application.</p>
+                <p><a href="/monitoring">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-smartphone"></span></div>
+              <div>
+                <h3>Financial Investment</h3>
+                <p>To invest is to allocate money in the expectation of some benefit in the future. In finance, the benefit from an investment is called a return</p>
+                <p><a href="/investment">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4">
+              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-head"></span></div>
+              <div>
+                <h3>Financial Management</h3>
+                <p>Financial management focuses on ratios, equities and debts. It is useful for portfolio management, distribution of dividend, capital raising, hedging and looking after fluctuations in foreign currency and product cycles</p>
+                <p><a href="/management">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section testimonial-wrap" id="testimonials-section" data-aos="fade">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Testimonials</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slide-one-item home-slider owl-carousel">
+          <div>
+            <div class="testimonial">
+              
+              <blockquote class="mb-5">
+                <p>&ldquo;Great site, I learned alot about stock market, trading, investment and today I am a stock broker&rdquo;</p>
+              </blockquote>
+
+              <figure class="mb-4 d-flex align-items-center justify-content-center">
+                <div><img src="{% static 'front/images/person_3.jpg' %}" alt="Image" class="w-50 img-fluid mb-3"></div>
+                <p>John Smith</p>
+              </figure>
+            </div>
+          </div>
+          <div>
+            <div class="testimonial">
+
+              <blockquote class="mb-5">
+                <p>&ldquo;The predictions are amazing and I ambecoming rich and I don't have to do anythin I just have to follow your service.&rdquo;</p>
+              </blockquote>
+              <figure class="mb-4 d-flex align-items-center justify-content-center">
+                <div><img src="{% static 'front/images/person_2.jpg' %}" alt="Image" class="w-50 img-fluid mb-3"></div>
+                <p>Christine Aguilar</p>
+              </figure>
+              
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial">
+
+              <blockquote class="mb-5">
+                <p>&ldquo;My company is growing and after integrating with your various service it's going great.&rdquo;</p>
+              </blockquote>
+              <figure class="mb-4 d-flex align-items-center justify-content-center">
+                <div><img src="{% static 'front/images/person_4.jpg' %}" alt="Image" class="w-50 img-fluid mb-3"></div>
+                <p>Robert Spears</p>
+              </figure>
+
+              
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <section class="site-section border-bottom .mx-auto" id="team-section">
+      <div class="container .mx-auto">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Team</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Our team have 3 members and you connect with them for more information and guidance.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="">
+            <div class="team-member">
+              <figure>
+                <ul class="social">
+                  <li><a href="https://www.linkedin.com/in/dikshit-v-r-2a77441a0"><span class="icon-linkedin"></span></a></li>
+                </ul>
+                <img style="width: 250px; height: 250px" src="{% static 'front/images/Dikshit.jpeg' %}" alt="Image" class="img-fluid">
+              </figure>
+              <div class="p-3">
+                <h3>Dikshit Reddy</h3>
+                <span class="position">Frontend & Django Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <figure>
+                <ul class="social">
+                  <li><a href="https://www.linkedin.com/in/eedula-ganeshreddy-907357196"><span class="icon-linkedin"></span></a></li>
+                </ul>
+                <img style="width: 250px; height: 250px" src="{% static 'front/images/ganesh.jpeg' %}" alt="Image" class="img-fluid">
+              </figure>
+              <div class="p-3">
+                <h3>Ganesh Reddy</h3>
+                <span class="position">ML Developer</span>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="">
+            <div class="team-member">
+              <figure>
+                <ul class="social">
+                </ul>
+                <img style="width: 250px; height: 250px" src="{% static 'front/images/somu.jpeg' %}" alt="Image" class="img-fluid">
+              </figure>
+              <div class="p-3">
+                <h3>Soma Sekhar</h3>
+                <span class="position">Python Developer</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

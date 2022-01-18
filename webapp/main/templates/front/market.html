@@ -1,0 +1,55 @@
+{% extends 'front/master.html' %}
+{% load static %}
+
+{% block headblock %}
+
+        <title>SafeTrade | Analysis</title>
+        <meta charset="utf-8">
+
+{% endblock %}
+
+{% block mainblock %}
+
+    <div class="site-section cta-big-image" id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">Market Analysis</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="{% static 'front/images/about.jpg' %}" alt="Image" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3 class="h3 mb-4 text-black">For the next genration investment</h3>
+              <p style="text-align:justify;">
+                    Become a part of the industry analysis and thus in turn of the global environmental analysis
+                    We also provide detailed analysis of the present market condition along with providing you the analysis of the movement at the market. This helps you to get the idea of the trading pattern of the market.
+                    Along with analyzing the market and trend stock market our team also speculate the future of the market.
+                    Apart from the fundamental analysis of the stocks we will also provide technical analysis of the stocks to give you an idea of the prospective price movement of the stock.
+              </p>
+
+            </div>
+
+
+
+            <div class="mb-4">
+              <ul class="list-unstyled ul-check success">
+                <li>Our team provides in-depth and detailed information about the stock market. We describe different aspects of the trading at the market and give explanations about the current happenings at the market.</li>
+                <li>We’ll also provide you with an overall speculation of the stock market which is based on analysis of the market and the market trend. These speculations will actually help you to select the right stocks for investment hence ensuring you a good position in the stock market.</li>
+              </ul>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

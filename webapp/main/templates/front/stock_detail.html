@@ -1,0 +1,107 @@
+{% extends 'front/master.html' %}
+{% load static %}
+
+{% block headblock %}
+
+    {% for i in showstock %}
+    <title>SafeTrade | {{ i.name }}</title>
+    {% endfor %}
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart', 'line']});
+        google.charts.setOnLoadCallback(drawAxisTickColors);
+
+        function drawAxisTickColors() {
+              var data = new google.visualization.DataTable();
+              data.addColumn('number', 'X');
+              data.addColumn('number', 'real');
+              data.addColumn('number', 'predicted');
+                dfa={{ df }}
+
+              data.addRows(dfa);
+
+              var options = {
+                hAxis: {
+                  title: 'Time(In days)',
+                  textStyle: {
+                    color: '#01579b',
+                    fontSize: 24,
+                    fontName: 'Arial',
+                    bold: true,
+                    italic: true
+                  },
+                  titleTextStyle: {
+                    color: '#01579b',
+                    fontSize: 16,
+                    fontName: 'Arial',
+                    bold: false,
+                    italic: true
+                  }
+                },
+                vAxis: {
+                  title: 'Stock Price',
+                  textStyle: {
+                    color: '#1a237e',
+                    fontSize: 24,
+                    bold: true
+                  },
+                  titleTextStyle: {
+                    color: '#1a237e',
+                    fontSize: 24,
+                    bold: true
+                  }
+                },
+                colors: ['#a52714', '#097138']
+              };
+              var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+              chart.draw(data, options);
+            }
+    </script>
+
+{% endblock %}
+
+{% block mainblock %}
+
+    {% for i in showstock %}
+    <div class="site-section cta-big-image" id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">Prediction of {{ i.name }} Stock Price</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+
+            <div id="chart_div" style="width: 650px; height: 400px"></div>
+            <!-- <img src="{{i.picurl}}" alt="Image" class="img-fluid"> -->
+
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4">
+              <h3 class="h3 mb-4 text-black">For the next great business</h3>
+              <p>{{i.txt}}</p>
+
+            </div>
+
+
+            <div class="mb-4">
+                <p>Day 0 is reference(i.e, Today)</p>
+              <ul class="list-unstyled ul-check success">
+                <li>Best Invest Time - Day {{ it }} </li>
+                <li>Best Divest Time - Day {{ dt }} </li>
+              </ul>
+                <p><b>For an amount of Rs10000 investment you would be getting approx Rs{{ ratio }}</b></p>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endfor %}
+{% endblock %}
